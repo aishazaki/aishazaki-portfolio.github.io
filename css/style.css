@@ -1,0 +1,776 @@
+header {
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    min-height: 80vh;
+    /*حتى لا تغطي صورةالخلفية كامل الترويسة*/
+    background-size: cover;
+}
+
+@font-face {
+    font-family: ar-font;
+    src: url(../font/Cairo-Regular.ttf);
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: ar-font;
+}
+
+/*تنسيقات الترويسة */
+
+header .MainCard {
+    background-color: rgba(5, 117, 230, 0.9);
+    padding: 3% 10%;
+    color: #ffffff;
+    transform: translateY(20%)
+}
+
+header .MainCard img {
+    border: 5px solid #72ace7;
+    margin-bottom: 20px;
+}
+
+header .MainCard h1 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+/* تنسيقات الخط المطبقة على المسمى الوظيفي */
+
+header .MainCard h1 span {
+    font-size: 24px;
+}
+
+/* ضبط الهامش والحاشية الخاصة بأيقونات التواصل الاجتماعي */
+
+header .MainCard ul {
+    padding-right: 0;
+    margin-bottom: 40px;
+}
+
+header .MainCard ul li {
+    margin-right: 10px;
+}
+
+header .MainCard ul li a {
+    color: #021b79;
+    font-size: 24px;
+}
+
+/* ضبط التنسيقات الخاصة بالعنوان الثاني في الأسفل */
+
+header .MainCard h2 {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ضبط التنسيقات الخاصة بالفقرة النصية في الأسفل */
+
+header .MainCard p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #89c4ff;
+    margin-bottom: 40px;
+}
+
+/* خصائص الخط المستخدمة في زر تحميل السيرة الذاتية */
+
+header .MainCard>a {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+/* التنسيقات المطبقة على شرائط التنقل وضبط الهامش من اليمين واليسار للقائمة */
+
+nav.navbar ul.navbar-nav a.nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 60px;
+    /*تعيين المسافة بين القائمة وراس  الصفحة*/
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+/* تغير لون عناصر القائمة عند مرور مؤشر الفأرة فوقه */
+
+nav.navbar ul.navbar-nav a.nav-link:hover, nav.navbar ul.navbar-nav a.nav-link.active {
+    color: #0575e6;
+    background-color: #ffffff;
+}
+
+/*  عند النزول إلى أسفل الصفحة */
+
+nav.navbar.noTransparrent ul.navbar-nav a.nav-link {
+    color: #0575e6;
+}
+
+nav.navbar.noTransparrent ul.navbar-nav a.nav-link:hover, nav.navbar.noTransparrent ul.navbar-nav a.nav-link.active {
+    color: #ffffff;
+    background-color: #0575e6;
+}
+
+nav.navbar.noTransparrent {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav.navbar.noTransparrent button.navbar-toggler {
+    margin: 30px auto;
+}
+
+/* تغير لون أيقونة القائمة عند الانتقال للأسفل */
+
+nav.navbar.noTransparrent button.navbar-toggler span {
+    color: #0575e6;
+}
+
+section.licence {
+    padding: 220px 0 80px;
+    background-color: #f6fbff;
+}
+
+/* تنسيقات المطبقة على الخط في العنوان */
+
+section.licence .title {
+    padding-bottom: 43px;
+    Position: relative
+}
+
+section.licence .title h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #196dd1;
+}
+
+/* إضافة الخط الزمني تحت العنوان  */
+
+section.licence .title:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #196dd1;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+/* إظهار العنوان وأيقونة القبعة بسطرين مختلفين */
+
+section.licence .title h2 i {
+    display: block;
+}
+
+section.licence ul.timeline .time-box {
+    background-color: #ffffff;
+    border: 2px solid #f4f3f3;
+    max-width: 48%;
+    padding: 25px 40px;
+    position: relative;
+}
+
+/* تطبيق التنسيقات الخاصة في العنوان ضمن الصناديق الزمنية */
+
+section.licence .time-box h4 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+}
+
+/* تنسيقات فقرة التاريخ والتي تظهر باللون الأزرق والخط باللون الأبيض */
+
+section.licence .time-box h4 span {
+    color: #ffffff;
+    background: #0575e6;
+    padding: 0 5px;
+    margin-left: 25px;
+}
+
+/* تنسيقات الفقرة النصية في الصندوق الزمني  */
+
+section.licence .time-box p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+}
+
+/* إضافة المثلث الصغير الذي يظهر على يسار الفقرات  
+عبر اضافةمربع وتدويرة ب45درجه واخفاء الحدود التى تقع داخل مربع الحوار*/
+
+section.licence .time-box:after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -10px;
+    width: 20px;
+    /*تحديد ارتفاع وعرض المربع */
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    /*درجة دوران المربع*/
+    border-left: 2px solid #f4f3f3;
+    border-bottom: 2px solid #f4f3f3;
+}
+
+section.licence ul.timeline {
+    padding-top: 45px;
+    padding-right: 0;
+    position: relative;
+}
+
+section.licence ul.timeline:before {
+    content: "";
+    height: 75%;
+    /*فام المدرب بتحديد 75% لكنها لم تبدو جيدة في المتصفح*/
+    width: 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    margin-right: -1px;
+    background-color: #196dd1;
+}
+
+section.licence ul.timeline li {
+    position: relative;
+}
+
+section.licence ul.timeline li:before {
+    content: "";
+    position: absolute;
+    top: 9%;
+    /*حتى تظهر اعلى من العنصر li*/
+    right: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: -5px;
+    background-color: #196dd1;
+    border-radius: 50%;
+}
+
+section.licence ul.timeline li:nth-of-type(even) {
+    direction: ltr;
+    text-align: left;
+}
+
+ul.timeline li:nth-of-type(even) span {
+    margin-left: 0;
+    margin-right: 25px;
+    float: left;
+}
+
+ul.timeline li:nth-of-type(even) .time-box:after {
+    border: 0;
+    border-right: 2px solid #f4f3f3;
+    border-top: 2px solid #f4f3f3;
+    left: auto;
+    right: -10px;
+}
+
+section.licence ul.timeline li:not(:first-of-type) {
+    margin-top: -50px;
+}
+
+section.statistics {
+    background-image: url(../img/bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* إضافة طبقة زرقاء شفافة أمام الخلفية */
+
+section.statistics .overlay {
+    background-color: rgba(5, 117, 230, 0.7);
+    padding: 150px 0;
+}
+
+/* تنسيقات الخط المطبقة على الفقرة النصية في قسم المهارات */
+
+section.statistics .stat p {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+/* canvas الوسم الذي تم به رسم الدائرة الديناميكية وتم اضافته بتاثير اضافهcircle progress */
+
+section.statistics .circle canvas {
+    background-color: #eef6ff;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+section.statistics .circle {
+    position: relative;
+}
+
+section.statistics .circle span {
+    font-weight: bold;
+    font-size: 24px;
+    color: #0575e6;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+section.gallery {
+    padding: 75px 0 90px;
+}
+
+/* ضبط الهامش ليفصل بين العنوان والفقرات في الأسفل */
+
+section.gallery .title {
+    margin-bottom: 35px;
+}
+
+/* تنسيقات الخط المطبقة في العنوان */
+
+section.gallery .title h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #0575e6;
+}
+
+/* فصل الأيقونة عن العنوان ضمن سطر خاص بها */
+
+section.gallery .title h2 i {
+    display: block;
+}
+
+/* إخفاء عناصر الدخل في هذا القسم */
+
+section.gallery .work-gallery input {
+    display: none;
+}
+
+/* التنسيقات الخاصة بالتصنيفات الموجودة بالقسم */
+
+section.gallery .work-gallery label {
+    font-size: 18px;
+    line-height: 35px;
+    color: #8f9899;
+    cursor: pointer;
+    margin: 0 7px 40px;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border: 2px solid #e4eeee;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+}
+
+/* التنسيقات الخاصة بالتصنيفات عند مرور مؤشر الفأرة فوقه */
+
+section.gallery .work-gallery label:hover {
+    color: #ffffff;
+    background-color: #0575e6;
+    border: 2px solid #0575e6;
+}
+
+/* تغيير لون التصنيفات عند النقر عليها 
+ّّّّّّّّ~ تعنى ان العنصرالثاني يجب ان يكون بعد الاول ضمن نفس  الحاوية وليس شرطا ان يكون بعده مباشرة*/
+
+section.gallery input.item-type-1:checked~label.label-type-1, section.gallery input.item-type-2:checked~label.label-type-2, section.gallery input.item-type-3:checked~label.label-type-3, section.gallery input.item-type-all:checked~label.label-type-all {
+    color: #ffffff;
+    background-color: #0575e6;
+    border: 2px solid #0575e6;
+}
+
+/* تكبير الصور التابعة للتصنيف عند الضغط عليه */
+
+input.item-type-1:checked~.items .item-type-1, input.item-type-2:checked~.items .item-type-2, input.item-type-3:checked~.items .item-type-3 {
+    transform: scale(1.08);
+    /*scale ياخذ قيمة افتراضية تساوي 1*/
+    /*زيادة حجم العامود عن قيمته الطبيعية*/
+    opacity: 1;
+}
+
+/* تصغير باقي صور التصنيفات وظهورها بشفافية */
+
+/* المحدد ~ يقوم بتحديد كل العناصر التي في نفس الحاوية */
+
+input.item-type-1:checked~.items>.item:not(.item-type-1), input.item-type-2:checked~.items>.item:not(.item-type-2), input.item-type-3:checked~.items>.item:not(.item-type-3) {
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+/* جعل التنسيقات على مجموعة الصور تظهر ببطء */
+
+.work-gallery .items .item {
+    transition: all 0.6s ease;
+    margin-bottom: 25px;
+}
+
+section.contacts {
+    background-image: url(../img/bg3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/* تنسيقات الطبقة السوداء التي تغطي خلفية القسم */
+
+section.contacts .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 100px;
+}
+
+/* التنسيقات الخاصة بخط العنوان وضبط الهامش الخاص به */
+
+section.contacts .testimonials .title h3 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 27px;
+    line-height: 50px;
+}
+
+section.contacts .slider {
+    width: 65%;
+    margin: 0px auto 80px;
+}
+
+/* تحديد عرض ولون الخط دخل عارض الشرائح */
+
+section.contacts .slider .carousel {
+    min-height: 250px;
+    color: #b1b1b1;
+}
+
+/* ضبط الحواشي الخاصة بعارض الشرائح وتحديد لون الخلفية داخله */
+
+.slider .carousel .carousel-caption {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 80px 70px 35px;
+    right: 0;
+    left: 0;
+}
+
+/*ليتم ظهوره تحديد ارتفاع عارض الشرائح */
+
+.slider .carousel .carousel-item {
+    min-height: 350px;
+}
+
+/* تحريك الصورة إلى أعلى عارض الشرائح */
+
+.carousel .carousel-caption img {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* التنسيقات المطبقة على الخط في العنوان */
+
+.carousel .carousel-caption h3 {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+/* تنسيقات فقرة المسمى الوظيفي ضمن العنوان */
+
+.carousel .carousel-caption h3 span {
+    font-size: 15px;
+    color: #9c9c9c;
+}
+
+/* التنسيقات المطبقة على الفقرة النصية في الأسفل وضبط الهامش الخاص بها */
+
+.carousel .carousel-caption p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #b1b1b1;
+    margin-bottom: 25px;
+}
+
+/* التنسيقات المطبقة على وسم الرابط التشعبي الذي يحتوي على أيقونات التواصل الإجتماعي */
+
+.carousel .carousel-caption ul a {
+    font-size: 24px;
+    color: #b2d8fe;
+}
+
+/* إزالة الحاشية التي يتم إضافتها على القوائم تلقائيًا */
+
+.carousel .carousel-caption ul {
+    padding-right: 0;
+}
+
+/* تحديد المسافة بين القوائم من خلال ضبط الهامش */
+
+.carousel .carousel-caption ul li {
+    margin-right: 5px;
+}
+
+.carousel .carousel-indicators li {
+    max-width: 15px;
+    height: 15px;
+    border: 1px solid #0575e6;
+    background-color: #ffffff;
+}
+
+/* تغيير لون نقطة التنقل الفعالة */
+
+.carousel .carousel-indicators li.active {
+    background-color: #0575e6;
+}
+
+/* ضبط الحواشي والهامش لعارض الشرائح */
+
+.carousel .carousel-indicators {
+    padding-right: 0;
+    margin: 0;
+    bottom: 12px;
+}
+
+/* إضافة أسهم التنقل وتعيين موضعها في وسط عارض الشرائح */
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: auto;
+    transform: translate(50%, -50%);
+    z-index: 10;/* bootstrap حتى يتناسب مع النسخة الاحدث من */
+}
+
+/* التنسيقات المطبقة على أسهم التنقل */
+
+.carousel .carousel-control-next i, 
+.carousel .carousel-control-prev i {
+    padding: 10px 20px;
+    background: #0575e6;
+    border-radius: 50%;
+}
+
+/* إلى منتصف عارض الشرائح prev إزاحة سهم */
+
+.carousel .carousel-control-prev {
+    transform: translate(-50%, -50%);
+}
+/* ضبط الحاشية العلوية وتعيين لون الخلفية */
+section.contacts  .contact-info {
+    background-color: #ffffff;
+    padding: 50px;
+}
+/* التنسيقات المطبقة على الخط في العنوان */
+section.contacts .overlay .contact-info .title h3 {
+    font-size: 30px;
+    color: #0575e6;
+    margin-bottom: 35px;
+    line-height: 50px;
+}
+/* التنسيقات المطبقة على حقول الإدخال في نموذج الإرسال */
+.contact-info  .form-group input, 
+.contact-info  .form-group textarea {
+    border: 2px solid #f1f1f1;
+    border-radius: 3px;
+    font-family: ar-font;
+    font-size: 18px;
+    color: #c2c2c2;
+    line-height: 35px;
+    padding-right: 45px;
+}
+/* تحديد ارتفاع حقل إدخال الرسائل */
+.contact-info form  textarea {
+    min-height: 220px;
+    max-height: 220px;/*min & max حتى يظهر بهذا الارتفاع بشكل دائم*/
+}
+/* التنسيقات المطبقة على الأيقونات الموجودة في حقول الإدخال */
+.contact-info  form .form-group {
+    position: relative;
+}
+.contact-info  form .form-group:before {
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 8px;/* bootsrap حتى يتناسب مع النسخة الحديثة من */
+    right: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0575e6;
+    font-weight: 900;/*to fill icons with color*/
+    display: inline-block;
+}
+/* إضافة أيقونة المستخدم في الحقل الأول */
+.contact-info .form form .form-group:first-of-type:before {
+    content: "\f007";
+}
+/* إضافة أيقونة ظرف الرسالة في الحقل الثاني */
+.contact-info .form form .form-group:nth-of-type(2):before {
+    content: "\f0e0";
+}
+/* التنسيقات المطبقة على زر الإرسال */
+.contact-info form button {
+    font-family: ar-font;
+    font-size: 24px;
+    color: #0575e6;
+    line-height: 25px;
+    background-color: #ffffff;
+    padding: 10px 70px;
+    border: 2px solid #0575e6;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+/* تنسيقات الخط المطبقة على القائمة */
+.contact-info ul.contact-us li {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 30px;
+    color: #0575e6;
+}
+/* إلغاء الحاشية التي يتم افتراضها على القوائم */
+section.contacts .contact-info ul {
+    padding: 0;
+}
+/* ضبط الهامش عن يمين أيقونات التواصل الاجتماعي */
+.contact-info ul.social li {
+    margin-right: 9px;
+}
+/* التنسيقات المطبقة على أيقونات التواصل الاجتماعي */
+.contact-info ul.social li a i {
+    background-color: #9bc8f5;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+/* تغيير لون أيقونات التواصل الإجتماعي عند مرور مؤشر الفأرة فوقه */
+.contact-info ul.social li a i:hover {
+    background-color: #0575e6;
+}
+/* التنسيقات المطبقة على الفقرة النصية أسفل الصفحة */
+section.contacts  .copyright p {
+    font-size: 18px;
+    color: #ececec;
+    line-height: 77px;
+    margin: 0px; /* لازالة الحاشية بالاسفل */
+}
+section.contacts form .error{
+    color: red;
+}
+@media(max-width: 991px) {
+    nav.navbar ul.navbar-nav a.nav-link{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    .slider .carousel .carousel-item{
+        min-height: 390px;
+    }
+    .contact-info ul.social  li a i{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .contact-info .form-group  input,  .contact-info .form-group textarea {
+        font-size: 14px;
+    }
+    .contact-info form button{
+        font-size: 19px;
+        padding: 10px 28px;
+    }
+}
+@media (max-width: 990px) and (min-width: 768px){
+    section.contacts .overlay .contact-info ul.contact-us li {
+         overflow-wrap: break-word;
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         align-items: center;
+     }
+ }
+@media (max-width: 767px) {
+    nav.navbar ul.navbar-nav a.nav-link{
+        font-size: 12px;
+    }
+    section.licence ul.timeline .time-box{
+        max-width: 45%; 
+    }
+    section.licence ul.timeline::before{
+        height: 77%;
+    }
+    section.gallery .work-gallery label{
+        padding: 8px 6px;
+    }
+    .slider .carousel .carousel-item{
+        min-height: 452px;
+    }
+    .contact-info form button{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 583px) {
+    nav.navbar ul.navbar-nav {
+        margin: 0  !important;
+        padding: 0 20px;
+    }
+    nav.navbar ul.navbar-nav a.nav-link{
+        padding-left: 10px;
+    }
+}    
+/* التنسيقات المطبقة على عناصر القائمة في الشاشات ذات العرض الأصغر من 767 بيكسل  */
+
+/* bootstrap يوجد تعديلات هنا لم يضفها المدرب وذلك لأن هذه التعديلات تتناسب مع النسخ الحديثة فقط من */
+
+@media (max-width: 574px) {
+    nav.navbar {
+        min-height: 80px;
+        padding: 0.5rem 0;
+    }
+    nav.navbar .container {
+        width: 100%;
+        position: relative;
+        min-height: 40px;
+    }
+    nav.navbar button.navbar-toggler {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    nav.navbar button.navbar-toggler span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav.navbar.noTransparrent button.navbar-toggler {
+        margin: 0;
+    }
+    nav.navbar.noTransparrent ul.navbar-nav a.nav-link {
+        background-color: #ffffff;
+    }
+    nav.navbar ul {
+        padding-right: 0;
+        margin-top: 40px;
+    }
+    nav.navbar ul.navbar-nav a.nav-link {
+        background-color: royalblue;
+        color: #ffffff;
+    }
+    section.licence ul.timeline .time-box {
+        max-width: 100%;
+    }
+    section.licence ul.timeline li:not(:first-of-type) {
+        margin-top: 20px;
+    }
+    section.licence ul.timeline:before {
+        height: 90%;
+    }
+    ul.timeline li:nth-of-type(even) .time-box:after {
+        display: none;
+    }
+}
